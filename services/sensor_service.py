@@ -2,9 +2,13 @@ from models.hand_models import HandState, FingerState
 
 
 class SensorService:
-    def get_tactile_sensor(self, finger_id: int):
+    def get_tactile_sensor(self, hand_id: int, appendage: str):
         # Implementation to get tactile sensor values
-        return {"finger_id": finger_id, "tactile_value": True}  # Example binary value
+        return {
+            "hand_id": hand_id,
+            "appendage": appendage,
+            "tactile_value": False,
+        }
 
     def get_hand_state(self) -> HandState:
         # Implementation to get the full hand state

@@ -22,6 +22,7 @@ class FingerControl(BaseModel):
 
 
 class HandControl(BaseModel):
+    wrist: WristControl
     thumb: FingerControl
     index: FingerControl
     middle: FingerControl
@@ -37,6 +38,7 @@ class FingerState(BaseModel):
 
 
 class HandState(BaseModel):
+    wrist: WristState
     thumb: FingerState
     index: FingerState
     middle: FingerState
