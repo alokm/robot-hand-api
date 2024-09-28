@@ -1,4 +1,4 @@
-This api provides the ability to monitor and control an anthropomorphic robotic human hand.
+This api provides the ability to monitor and control a human-like robotic hand.
 
 
 The api features:
