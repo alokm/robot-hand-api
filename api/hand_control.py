@@ -10,13 +10,11 @@ logger = get_logger(__name__)
 
 # Labels for hands, parts of hand and movements
 # hand_id: unique id for hand
-# handedness: right or left
 # appendage: wrist, thumb, index, middle, ring, pinky
 # movement: rotate (wrist only), lateral, transverse
 # setting: float - positive or negative
 
 # TODO: Implement position, motor and force code
-# Decision: Do we include handedness as an api parameter or infer from hand_id?
 
 
 @router.post("v0/hand/position/{hand_id}/{appendage}/{joint_id}")
