@@ -8,15 +8,6 @@ hand_service = HandService()
 logger = get_logger(__name__)
 
 
-# Labels for hands, parts of hand and movements
-# hand_id: unique id for hand
-# appendage: wrist, thumb, index, middle, ring, pinky
-# movement: rotate (wrist only), lateral, transverse
-# setting: float - positive or negative
-
-# TODO: Implement position, motor and force code
-
-
 @router.post("v0/hand/position/{hand_id}/{appendage}/{joint_id}")
 async def set_joint_position(
     hand_id, appendage: str, joint_id: int, control: JointControl
